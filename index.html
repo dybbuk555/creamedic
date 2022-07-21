@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid mx-2 mx-md-3 mx-lg-5">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logos/logo.png" alt="Logo">
+            </a>
+            <div class="d-flex">
+                <div class="d-none d-lg-flex">
+                    <div class="search-bar align-self-center me-3">
+                        <input class="form-control me-2 bg-white-blue" type="search" aria-label="Search">
+                        <img class="search-icon" src="assets/images/icons/search.png">
+                    </div>
+                    <a class="text-account text-center align-self-center me-4" data-bs-toggle="modal" href="#studyModalToggle" role="button">MI CUENTA</a>
+                    <button class="shopping-cart" type="button">
+                        <img src="assets/images/icons/shopping-cart.png">
+                    </button>
+                </div>
+                <button class="navbar-toggler border-none ms-2 px-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <img src="assets/images/icons/menu.png">
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logos/logo.png" alt="Logo">
+                    </a>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item border-bottom pb-2 mb-3">
+                            <a class="text-account text-center align-self-center me-4">MI CUENTA</a>
+                        </li>
+                        <li class="nav-item border-bottom pb-2 mb-3">
+                            <a class="text-account text-center align-self-center me-4">SHOPPING CART</a>
+                        </li>
+                    </ul>
+                    <div class="search-bar align-self-center me-3">
+                        <input class="form-control me-2 bg-white-blue" type="search" aria-label="Search">
+                        <img class="search-icon" src="assets/images/icons/search.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid px-5">
+        <div class="row m-0 p-0">
+            <div class="col"></div>
+            <div class="col-lg-8 row p-0 ps-5 m-0">
+                <div class="col-lg-5">
+                    <div class="text-title text-right text-white py-3">
+                        ¿Qué servicio necesitas hoy?
+                    </div>
+                    <div class="text-title text-right text-white py-3">
+                        CREAMEDIC Clínica Digital te ofrece:
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="banner-card">
+                        <img src="assets/images/banners/banner1.png" alt="banner1">
+                        <div class="banner-content">
+                            <div class="text-banner-title text-color-blue-dark pb-2">Pruebas de laboratorio</div>
+                            <div class="text-banner-content text-color-grey">Amplia variedad de estudios que ayudan a
+                                evaluar tu salud.</div>
+                        </div>
+                    </div>
+                    <div class="banner-card mt-3">
+                        <img src="assets/images/banners/banner2.png" alt="banner2">
+                        <div class="banner-content">
+                            <div class="text-banner-title text-color-blue-dark pb-2">Pruebas COVID</div>
+                            <div class="text-banner-content text-color-blue-dark">Detección rápida y sencilla del
+                                SARS-CoV2.</div>
+                        </div>
+                    </div>
+                    <div class="banner-card mt-3">
+                        <img src="assets/images/banners/banner3.png" alt="banner3">
+                        <div class="banner-content">
+                            <div class="text-banner-title text-color-blue-dark pb-2">Servicios de ambulancia</div>
+                            <div class="text-banner-content text-color-white">Atención oportuna de emergencias.</div>
+                        </div>
+                    </div>
+                    <div class="banner-card mt-3">
+                        <img src="assets/images/banners/banner4.png" alt="banner4">
+                        <div class="banner-content">
+                            <div class="text-banner-title text-color-green pb-2">Consulta médica remota</div>
+                            <div class="text-banner-content text-color-white">Servicio virtual desde casa y en tiempo
+                                real.</div>
+                        </div>
+                    </div>
+                    <div class="banner-card mt-3 mb-4">
+                        <img src="assets/images/banners/banner5.png" alt="banner5">
+                        <div class="banner-content banner-width-30">
+                            <div class="text-banner-title text-color-grey pb-2">Clínicas Neurológicas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer container-fluid px-5">
+        <div class="row">
+            <div class="col-lg-7 d-flex pt-4">
+                <div class="text-paragraph text-color-grey align-self-center pe-2 pt-2">CREAMEDIC Derechos reservados| ©
+                    2021 | Aviso de Privacidad | Términos y condiciones
+                </div>
+                <img class="logo-CIE align-self-center" src="assets/images/logos/logo-CIE.png">
+            </div>
+            <div class="col"></div>
+        </div>
+    </footer>
+    <div class="modal fade" id="studyModalToggle" aria-hidden="true" aria-labelledby="studyModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="modal-cancel bg-white" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="assets/images/icons/x-circle.png" alt="Cancel">
+                    </button>
+                    <div class="container text-center py-4">
+                        <div class="text-study-title text-color-blue-dark pt-2">
+                            Tenemos una prueba de laboratorio cerca de ti.
+                        </div>
+                        <div class="text-study-content text-color-blue-dark py-3">
+                            Ingresa tu C.P., municipio o alcaldía para visualizar las opciones de estudios clínicos en tu localidad.
+                        </div>
+                        <img class="location-image" src="assets/images/icons/location.png" alt="Location">
+                        <button class="study-button text-study-button text-color-grey text-weight-1 mb-3">Código postal, municipio o alcaldía</button>
+                        <div class="text-study-content text-color-blue-dark py-3">Inicia sesión o crea tu cuenta para continuar</div>
+                        <button class="study-button study-button-facebook text-study-button text-color-white bg-facebook mb-3">
+                            Continuar con Facebook
+                        </button>
+                        <button class="study-button study-button-google text-study-button text-color-grey mb-3">
+                            Continuar con Google
+                        </button>
+                        <button class="study-button text-study-button text-color-grey">
+                            Continuar con Correo elctronico
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
