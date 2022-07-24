@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css">
+</head>
+
+<body class="">
+    <nav class="navbar bg-blue-primary">
+        <div class="container-fluid mx-2 mx-md-3 mx-lg-5">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logos/logo.png" alt="Logo">
+            </a>
+            <div class="d-flex">
+                <div class="d-none d-lg-flex">
+                    <div class="search-bar align-self-center me-3">
+                        <input class="form-control me-2 bg-white-blue" type="search" aria-label="Search">
+                        <img class="search-icon" src="assets/images/icons/search.png">
+                    </div>
+                    <a class="text-account text-center align-self-center me-4" data-bs-toggle="modal"
+                        href="#loginModalToggle" role="button">MI CUENTA</a>
+                    <a class="shopping-cart mt-2 pt-1" data-bs-toggle="modal" href="#studyModalToggle" role="button">
+                        <img src="assets/images/icons/shopping-cart.png">
+                    </a>
+                </div>
+                <button class="navbar-toggler border-none ms-2 px-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <img src="assets/images/icons/menu.png">
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logos/logo.png" alt="Logo">
+                    </a>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item border-bottom pb-2 mb-3">
+                            <a class="text-account text-center align-self-center me-4">MI CUENTA</a>
+                        </li>
+                        <li class="nav-item border-bottom pb-2 mb-3">
+                            <a class="text-account text-center align-self-center me-4">SHOPPING CART</a>
+                        </li>
+                    </ul>
+                    <div class="search-bar align-self-center me-3">
+                        <input class="form-control me-2 bg-white-blue" type="search" aria-label="Search">
+                        <img class="search-icon" src="assets/images/icons/search.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="fluid-container p-0 m-0">
+        <div class="row">
+            <div class="col-lg-9 bg-white-blue wizard-height">
+                <div class="container-sm px-md-5">
+                    <div class="multisteps-form">
+                        <div class="row mt-5">
+                            <div class="col-12 mt-5">
+                                <div class="multisteps-form__progress">
+                                    <button class="multisteps-form__progress-btn js-active"
+                                        type="button"><div class="text-title-sm text-color-grey">Ubicación</div></button>
+                                    <button class="multisteps-form__progress-btn" type="button">
+                                        <div class="text-title-sm text-color-grey">Tipo de estudio</div></button>
+                                    <button class="multisteps-form__progress-btn" type="button"><div class="text-title-sm text-color-grey">Resultados</div></button>
+                                    <button class="multisteps-form__progress-btn" type="button"><div class="text-title-sm text-color-grey">Programar cita</div></button>
+                                    <button class="multisteps-form__progress-btn" type="button"><div class="text-title-sm text-color-grey">Finalizar compra</div></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <form class="multisteps-form__form">
+                                    <!--single form panel-->
+                                    <div class="multisteps-form__panel js-active">
+                                        <div class="row mt-5">
+                                            <div
+                                                class="col-12 d-flex justify-content-center text-center align-items-center text-title-lg text-color-blue-dark mb-5">
+                                                ¿Dónde prefieres el servicio?</div>
+                                            <button
+                                                class="col-8 mx-auto js-btn-next d-flex btn-service align-items-center"
+                                                type="button" title="Next">
+                                                <image src="assets/images/direct.png" alt="direct">
+                                                    <div class="text-title-md text-color-blue-dark ms-3">Directo en
+                                                        sucursal
+                                                    </div>
+                                            </button>
+                                            <button
+                                                class="col-8 mx-auto js-btn-next d-flex btn-service align-items-center mt-3"
+                                                type="button" title="Next">
+                                                <image src="assets/images/home.png" alt="direct">
+                                                    <div class="text-title-md text-color-blue-dark ms-3">Servicio a
+                                                        domicilio</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--single form panel-->
+                                    <div class="multisteps-form__panel">
+                                        <div class="row mt-5">
+                                            <div
+                                                class="col-12 d-flex justify-content-center align-items-center text-center text-title-lg text-color-blue-dark mb-5">
+                                                Selecciona uno o más estudios disponibles en nuestro catálogo.</div>
+                                            <div class="row col-12 col-lg-10 col-xl-9 mx-auto">
+                                                <div
+                                                    class="text-title-md text-color-blue-primary d-flex justify-content-start align-items-center text-left mt-2">
+                                                    Estudios sanguíneos</div>
+                                                <div
+                                                    class="col-12 border-radius-xm shadow-sm px-4 py-3 d-flex justify-content-between align-items-center text-left bg-white mt-3">
+                                                    <div class="">
+                                                        <div class="text-title-sm text-color-blue-dark">Biometría
+                                                            Hemática</div>
+                                                        <div class="text-content-md text-color-grey">Estudios sanguíneos
+                                                        </div>
+                                                    </div>
+                                                    <div class="calc">
+                                                        <button
+                                                            class="button-minus text-title-sm text-color-grey text-weight-1">-</button>
+                                                        <div class="d-inline text-title-sm text-color-blue-dark px-lg-3 px-2">1
+                                                        </div>
+                                                        <button
+                                                            class="button-plus text-title-sm text-color-grey text-weight-1">+</button>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-12 border-radius-xm shadow-sm px-4 py-3 d-flex justify-content-between align-items-center text-left bg-white mt-3">
+                                                    <div class="">
+                                                        <div class="text-title-sm text-color-blue-dark">DIMERO D en
+                                                            Plasma (Cuantitativo)</div>
+                                                        <div class="text-content-md text-color-grey">Estudios sanguíneos
+                                                        </div>
+                                                    </div>
+                                                    <div class="calc">
+                                                        <button
+                                                            class="button-minus text-title-sm text-color-grey text-weight-1">-</button>
+                                                        <div class="d-inline text-title-sm text-color-blue-dark px-lg-3 px-2">1
+                                                        </div>
+                                                        <button
+                                                            class="button-plus text-title-sm text-color-grey text-weight-1">+</button>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-12 border-radius-xm shadow-sm px-4 py-3 d-flex justify-content-between align-items-center text-left bg-white mt-3">
+                                                    <div class="">
+                                                        <div class="text-title-sm text-color-blue-dark">Grupo Sanguíneo
+                                                            y Factor Rh</div>
+                                                        <div class="text-content-md text-color-grey">Estudios sanguíneos
+                                                        </div>
+                                                    </div>
+                                                    <div class="calc">
+                                                        <button
+                                                            class="button-minus text-title-sm text-color-grey text-weight-1">-</button>
+                                                        <div class="d-inline text-title-sm text-color-blue-dark px-lg-3 px-2">0
+                                                        </div>
+                                                        <button
+                                                            class="button-plus text-title-sm text-color-grey text-weight-1">+</button>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-12 border-radius-xm shadow-sm px-4 py-3 d-flex justify-content-between align-items-center text-left bg-white mt-3">
+                                                    <div class="">
+                                                        <div class="text-title-sm text-color-blue-dark">Antígeno
+                                                            Prostático Específico total en suero</div>
+                                                        <div class="text-content-md text-color-grey">Estudios sanguíneos
+                                                        </div>
+                                                    </div>
+                                                    <div class="calc">
+                                                        <button
+                                                            class="button-minus text-title-sm text-color-grey text-weight-1">-</button>
+                                                        <div class="d-inline text-title-sm text-color-blue-dark px-lg-3 px-2">0
+                                                        </div>
+                                                        <button
+                                                            class="button-plus text-title-sm text-color-grey text-weight-1">+</button>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-12 border-radius-xm shadow-sm px-4 py-3 d-flex justify-content-between align-items-center text-left bg-white mt-3">
+                                                    <div class="">
+                                                        <div class="text-title-sm text-color-blue-dark">Perfil tiroideo
+                                                            en suero</div>
+                                                        <div class="text-content-md text-color-grey">Estudios sanguíneos
+                                                        </div>
+                                                    </div>
+                                                    <div class="calc">
+                                                        <button
+                                                            class="button-minus text-title-sm text-color-grey text-weight-1">-</button>
+                                                        <div class="d-inline text-title-sm text-color-blue-dark px-lg-3 px-2">0
+                                                        </div>
+                                                        <button
+                                                            class="button-plus text-title-sm text-color-grey text-weight-1">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row col-12 col-lg-10 col-xl-9 mx-auto mt-3">
+                                                <div
+                                                    class="text-title-md text-color-blue-primary d-flex justify-content-start align-items-center text-left mt-2">
+                                                    Química sanguínea</div>
+                                                <div
+                                                    class="col-12 border-radius-xm shadow-sm px-4 py-3 d-flex justify-content-between align-items-center text-left bg-white mt-3">
+                                                    <div class="">
+                                                        <div class="text-title-sm text-color-blue-dark">Química
+                                                            sanguínea de 6 elementos en suero</div>
+                                                        <div class="text-content-md text-color-grey">Estudios sanguíneos
+                                                        </div>
+                                                    </div>
+                                                    <div class="calc">
+                                                        <button
+                                                            class="button-minus text-title-sm text-color-grey text-weight-1">-</button>
+                                                        <div class="d-inline text-title-sm text-color-blue-dark px-lg-3 px-2">0
+                                                        </div>
+                                                        <button
+                                                            class="button-plus text-title-sm text-color-grey text-weight-1">+</button>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-12 border-radius-xm shadow-sm px-4 py-3 d-flex justify-content-between align-items-center text-left bg-white mt-3">
+                                                    <div class="">
+                                                        <div class="text-title-sm text-color-blue-dark">Química
+                                                            sanguínea de 35 elementos en suero</div>
+                                                        <div class="text-content-md text-color-grey">Estudios sanguíneos
+                                                        </div>
+                                                    </div>
+                                                    <div class="calc">
+                                                        <button
+                                                            class="button-minus text-title-sm text-color-grey text-weight-1">-</button>
+                                                        <div class="d-inline text-title-sm text-color-blue-dark px-lg-3 px-2">1
+                                                        </div>
+                                                        <button
+                                                            class="button-plus text-title-sm text-color-grey text-weight-1">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button
+                                                class="text-center col-4 mx-auto py-3 js-btn-next mt-5 mb-4 bg-blue-primary text-content-lg text-white border-radius-lg"
+                                                type="button" title="Next" mt-5>CONTINUAR</button>
+                                        </div>
+                                    </div>
+                                    <!--single form panel-->
+                                    <div class="multisteps-form__panel">
+
+                                        <div class="modal fade border-radius-md" id="detailModalToggle"
+                                            aria-hidden="true" aria-labelledby="detailModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <div class="container p-4">
+                                                            <div
+                                                                class="text-title-lg text-color-blue-dark d-flex justify-content-center align-items-center text-center mb-4">
+                                                                Detalle de estudio
+                                                            </div>
+                                                            <div class="d-flex p-0 m-0">
+                                                                <img class="pe-3" src="assets/images/direct.png"
+                                                                    alt="direct">
+                                                                <div class="py-2">
+                                                                    <div class="text-content-md text-color-grey pb-2">
+                                                                        Laboratorio</div>
+                                                                    <div class="text-title-sm text-color-blue-dark">
+                                                                        Química sanguínea de 35 elementos en suero
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mt-4 ps-2">
+                                                                <div class="text-content-lg text-color-blue-dark pb-1">
+                                                                    ¿Qué necesito para el estudio?</div>
+                                                                <div class="text-content-md ps-1 text-color-grey pb-1">
+                                                                    -
+                                                                    Ayuno de 8 a 12 h.</div>
+                                                                <div class="text-content-md ps-1 text-color-grey pb-1">
+                                                                    -
+                                                                    No realizar ejercicio el día de la muestra ni
+                                                                    fumar.</div>
+                                                                <div class="text-content-md ps-1 text-color-grey pb-1">
+                                                                    -
+                                                                    En las 24 h previas evitar: carne de puerco o
+                                                                    mariscos.</div>
+                                                                <div class="text-content-md ps-1 text-color-grey pb-1">
+                                                                    -
+                                                                    El ayuno en menores de 3 años es de 4 h.</div>
+                                                            </div>
+                                                            <div class="mt-3 ps-2">
+                                                                <div class="text-content-lg text-color-blue-dark pb-1">
+                                                                    Descripción del estudio</div>
+                                                                <div class="text-content-md ps-1 text-color-grey pb-3">
+                                                                    Evalúa en forma general el estado de salud de
+                                                                    individuos y establece pautas de diagnóstico con
+                                                                    información de riesgos de enfermedades crónicas
+                                                                    o degenerativas, combina elementos de otros
+                                                                    exámenes médicos para el diagnóstico. Agrega
+                                                                    elementos de funcionamiento del hígado y de sus
+                                                                    alteraciones ante ciertas pautas de
+                                                                    alimentación, infecciones, consumo de fármacos y
+                                                                    otras sustancias químicas.</div>
+                                                                <div class="text-content-md ps-1 text-color-grey">
+                                                                    Contiene glucosa, urea, nitrógeno ureico (BUN),
+                                                                    creatinina, relación BUN/CREA, ácido úrico,
+                                                                    colesterol total, colesterol de HDL, colesterol
+                                                                    de LDL, colesterol de VLDL, Colesterol no HDL,
+                                                                    triglicéridos, índices aterogénicos, proteínas
+                                                                    totales, albúmina, globulina, bilirrubina total,
+                                                                    bilirrubina directa, bilirrubina indirecta,
+                                                                    TGO(AST), TGP (ALT), fosfatasa alcalina, gama
+                                                                    glutamil transpeptidasa (GGT), deshidrogenasa
+                                                                    láctica, sodio, potasio, cloro, calcio, fósforo,
+                                                                    hierro, magnesio, cpk, amilasa.</div>
+                                                            </div>
+                                                            <div
+                                                                class="w-100 d-flex justify-content-center mt-5 align-items-center text-center">
+                                                                <a class="text-content-lg text-white border-none border-radius-md bg-blue-primary px-5 py-2 text-decoration-none"
+                                                                    data-bs-toggle="modal" href="#successModalToggle"
+                                                                    onclick="return func();" role="button">CERRAR</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="successModalToggle" aria-hidden="true"
+                                            aria-labelledby="successModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="modal-cancel bg-white"
+                                                            data-bs-dismiss="modal" aria-label="Close">
+                                                            <img src="assets/images/icons/x-circle.png" alt="Cancel">
+                                                        </button>
+                                                        <div class="container text-center pt-5 pb-2">
+                                                            <div class="text-title-md text-color-blue-dark pt-2">
+                                                                Se agregó correctamente al carrito
+                                                            </div>
+                                                            <div class="row">
+                                                                <div
+                                                                    class="d-flex justify-content-center align-items-center mt-2">
+                                                                    <img class="check-image"
+                                                                        src="assets/images/icons/check.png"
+                                                                        alt="Location">
+                                                                </div>
+                                                                <button
+                                                                    class="border-none col-8 mx-auto border-radius-md py-2 px-4 text-title-sm text-white bg-blue-primary mt-3 mb-1"
+                                                                    aria-label="Close" data-bs-dismiss="modal"
+                                                                    type="button">
+                                                                    FINALIZAR COMPRA
+                                                                </button>
+                                                                <a class="border-none text-decoration-none col-8 mx-auto border-radius-lg py-3 px-4 text-title-sm text-white bg-blue-dark mb-2"
+                                                                    data-bs-toggle="modal" href="#scheduleModalToggle"
+                                                                    role="button">
+                                                                    seguir comprando
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="scheduleModalToggle" aria-hidden="true"
+                                            aria-labelledby="scheduleModalToggleLabel" tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="modal-cancel bg-white"
+                                                            data-bs-dismiss="modal" aria-label="Close">
+                                                            <img src="assets/images/icons/x-circle.png" alt="Cancel">
+                                                        </button>
+                                                        <div class="container text-center pt-5 mb-3">
+                                                            <div class="text-title-md text-color-blue-dark pt-2">
+                                                                Uno de los estudios que has seleccionado no está
+                                                                disponible en esta sucursal.
+                                                                ¿Deseas agendarlo en otra sucursal ?
+                                                            </div>
+                                                            <div class="row">
+                                                                <button
+                                                                    class="js-btn-next border-none col-10 mx-auto border-radius-md py-3 px-4 text-title-sm text-white bg-blue-primary mt-4 mb-1"
+                                                                    type="button" title="Next" data-bs-dismiss="modal"
+                                                                    aria-label="Close">
+                                                                    AGENDAR ESTUDIO
+                                                                </button>
+                                                                <button
+                                                                    class="js-btn-next border-none col-10 mx-auto border-radius-md py-3 px-4 text-title-sm text-white bg-red mt-2 mb-1"
+                                                                    type="button" title="Next" data-bs-dismiss="modal"
+                                                                    aria-label="Close">
+                                                                    CONTINUAR Y PAGAR
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3" id="few-items">
+                                            <div
+                                                class="text-title-sm text-color-grey d-flex justify-content-center align-items-center text-center">
+                                                Estos son los mejores resultados de los estudios que seleccionaste en la
+                                                misma sucursal :</div>
+                                            <div
+                                                class="text-title-lg text-color-blue-dark d-flex justify-content-center align-items-center text-center">
+                                                <div class="py-3 border-bottom-gray px-5">
+                                                    Selecciona la sucursal de tu preferencia
+                                                </div>
+                                            </div>
+                                            <div class="col-10 mx-auto d-flex justify-content-start mt-4 px-0">
+                                                <div
+                                                    class="text-title-sm text-color-grey d-flex align-items-center me-3">
+                                                    <span class="circle bg-green-bass"></span>
+                                                    Precio bajo
+                                                </div>
+                                                <div
+                                                    class="text-title-sm text-color-grey d-flex align-items-center me-3">
+                                                    <span class="circle bg-yellow"></span>
+                                                    Precio medio
+                                                </div>
+                                                <div
+                                                    class="text-title-sm text-color-grey d-flex align-items-center me-3">
+                                                    <span class="circle bg-red"></span>
+                                                    Precio alto
+                                                </div>
+                                                <div
+                                                    class="text-title-sm text-color-grey d-flex align-items-center me-3">
+                                                    <img class="star" src="assets/images/icons/star.png" alt="star">
+                                                    Mis favoritos
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="col-xl-10 mx-auto mt-3 px-2 px-xl-4 py-4 bg-white shadow-sm row position-relative">
+                                                <span class="circle-absolute bg-green-bass"></span>
+                                                <div class="col-lg-7">
+                                                    <div class="text-content-sm text-color-grey pb-2">Estudios
+                                                        seleccionados</div>
+                                                    <div class="d-flex pb-2">
+                                                        <img src="assets/images/icons/x-circle.png"
+                                                            class="pe-1 button-close">
+                                                        <div class="">
+                                                            <div class="text-title-sm text-color-blue-dark pb-1">
+                                                                Hemoglobina Glicosilada A1c</div>
+                                                            <div class="text-content-sm text-color-blue-primary">Ver
+                                                                detalle de estudio</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex pb-2">
+                                                        <img src="assets/images/icons/x-circle.png"
+                                                            class="pe-1 button-close">
+                                                        <div class="">
+                                                            <div class="text-title-sm text-color-blue-dark pb-1">
+                                                                Química sanguínea de 35 elementos en suero</div>
+                                                            <div class="text-content-sm text-color-blue-primary">Ver
+                                                                detalle de estudio</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex pb-2">
+                                                        <img src="assets/images/icons/x-circle.png"
+                                                            class="pe-1 button-close">
+                                                        <div class="">
+                                                            <div class="text-title-sm text-color-blue-dark pb-1">
+                                                                Grupo Sanguíneo y Factor Rh</div>
+                                                            <div class="text-content-sm text-color-blue-primary">Ver
+                                                                detalle de estudio</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <div class="text-content-sm text-color-grey pb-2">Sucursal</div>
+                                                    <div class="text-title-md text-color-blue-primary pb-1">$ MXN
+                                                    </div>
+                                                    <div class="text-content-md text-color-blue-dark text-weight-4">
+                                                        Ubicación:</div>
+                                                    <div
+                                                        class="text-content-md text-color-blue-dark text-weight-2 pb-3">
+                                                        Guanajuato No. 244, Roma Nte, Cuauhtémoc, 06760 CDMX</div>
+                                                    <a class="bg-blue-primary text-content-lg text-decoration-none text-color-white border-radius-md px-3 py-2"
+                                                        data-bs-toggle="modal" href="#detailModalToggle"
+                                                        role="button">AGREGAR Y CONTINUAR</a>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="col-xl-10 mx-auto mt-3 px-2 px-xl-4 py-4 bg-white shadow-sm row position-relative">
+                                                <span class="circle-absolute bg-yellow"></span>
+                                                <div class="col-lg-7">
+                                                    <div class="text-content-sm text-color-grey pb-2">Estudios
+                                                        seleccionados</div>
+                                                    <div class="d-flex pb-2">
+                                                        <img src="assets/images/icons/x-circle.png"
+                                                            class="pe-1 button-close">
+                                                        <div class="">
+                                                            <div class="text-title-sm text-color-blue-dark pb-1">
+                                                                Hemoglobina Glicosilada A1c</div>
+                                                            <div class="text-content-sm text-color-blue-primary">Ver
+                                                                detalle de estudio</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex pb-2">
+                                                        <img src="assets/images/icons/x-circle.png"
+                                                            class="pe-1 button-close">
+                                                        <div class="">
+                                                            <div class="text-title-sm text-color-blue-dark pb-1">
+                                                                Química sanguínea de 35 elementos en suero</div>
+                                                            <div class="text-content-sm text-color-blue-primary">Ver
+                                                                detalle de estudio</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex pb-2">
+                                                        <img src="assets/images/icons/x-circle.png"
+                                                            class="pe-1 button-close">
+                                                        <div class="">
+                                                            <div class="text-title-sm text-color-blue-dark pb-1">
+                                                                Grupo Sanguíneo y Factor Rh</div>
+                                                            <div class="text-content-sm text-color-blue-primary">Ver
+                                                                detalle de estudio</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <div class="text-content-sm text-color-grey pb-2">Sucursal</div>
+                                                    <div class="text-title-md text-color-blue-primary pb-1">$ MXN
+                                                    </div>
+                                                    <div class="text-content-md text-color-blue-dark text-weight-4">
+                                                        Ubicación:</div>
+                                                    <div
+                                                        class="text-content-md text-color-blue-dark text-weight-2 pb-3">
+                                                        Guanajuato No. 244, Roma Nte, Cuauhtémoc, 06760 CDMX</div>
+                                                    <a class="bg-blue-primary text-content-md text-decoration-none text-color-white border-radius-md px-3 py-2"
+                                                        data-bs-toggle="modal" href="#detailModalToggle"
+                                                        role="button">AGREGAR Y CONTINUAR</a>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="col-xl-10 mx-auto mt-3 px-2 px-xl-4 py-4 bg-white shadow-sm row position-relative">
+                                                <span class="circle-absolute bg-red"></span>
+                                                <div class="col-lg-7">
+                                                    <div class="text-content-sm text-color-grey pb-2">Estudios
+                                                        seleccionados</div>
+                                                    <div class="d-flex pb-2">
+                                                        <img src="assets/images/icons/x-circle.png"
+                                                            class="pe-1 button-close">
+                                                        <div class="">
+                                                            <div class="text-title-sm text-color-blue-dark pb-1">
+                                                                Hemoglobina Glicosilada A1c</div>
+                                                            <div class="text-content-sm text-color-blue-primary">Ver
+                                                                detalle de estudio</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex pb-2">
+                                                        <img src="assets/images/icons/x-circle.png"
+                                                            class="pe-1 button-close">
+                                                        <div class="">
+                                                            <div class="text-title-sm text-color-blue-dark pb-1">
+                                                                Química sanguínea de 35 elementos en suero</div>
+                                                            <div class="text-content-sm text-color-blue-primary">Ver
+                                                                detalle de estudio</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex pb-2">
+                                                        <img src="assets/images/icons/x-circle.png"
+                                                            class="pe-1 button-close">
+                                                        <div class="">
+                                                            <div class="text-title-sm text-color-blue-dark pb-1">
+                                                                Grupo Sanguíneo y Factor Rh</div>
+                                                            <div class="text-content-sm text-color-blue-primary">Ver
+                                                                detalle de estudio</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <div class="text-content-sm text-color-grey pb-2">Sucursal</div>
+                                                    <div class="text-title-md text-color-blue-primary pb-1">$ MXN
+                                                    </div>
+                                                    <div class="text-content-md text-color-blue-dark text-weight-4">
+                                                        Ubicación:</div>
+                                                    <div
+                                                        class="text-content-md text-color-blue-dark text-weight-2 pb-3">
+                                                        Guanajuato No. 244, Roma Nte, Cuauhtémoc, 06760 CDMX</div>
+                                                    <a class="bg-blue-primary text-content-md text-decoration-none text-color-white border-radius-md px-3 py-2"
+                                                        data-bs-toggle="modal" href="#detailModalToggle"
+                                                        role="button">AGREGAR Y CONTINUAR</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-5" id="many-items">
+                                            <div
+                                                class="text-title-lg text-color-blue-dark d-flex justify-content-center align-items-center text-center">
+                                                Estos son los mejores resultados para ti.</div>
+                                            <div class="container"></div>
+                                            <div class="row mt-3 p-4 mx-0">
+                                                <div class="col-12 col-lg-6 col-xl-4 p-1">
+                                                    <div
+                                                        class="bg-white border-radius-xm shadow-md p-4 position-relative">
+                                                        <img class="star-absolute" src="assets/images/icons/star.png"
+                                                            alt="star">
+                                                        <span class="circle-absolute bg-green-bass ps-2"></span>
+                                                        <div class="text-content-sm text-color-grey pb-2">Sucursal</div>
+                                                        <div class="text-title-md text-color-blue-primary pb-1">$ MXN
+                                                        </div>
+                                                        <div class="text-content-md text-color-blue-primary pb-1">Ver
+                                                            detalle de estudio</div>
+                                                        <div class="text-content-md text-color-blue-dark text-weight-4">
+                                                            Ubicación:</div>
+                                                        <div
+                                                            class="text-content-md text-color-blue-dark text-weight-2 pb-3">
+                                                            Guanajuato No. 244, Roma Nte, Cuauhtémoc, 06760 CDMX</div>
+                                                        <a class="bg-blue-primary text-content-md text-decoration-none text-color-white border-radius-md border-none px-2 py-2"
+                                                            data-bs-toggle="modal" href="#detailModalToggle"
+                                                            role="button">AGREGAR
+                                                            Y CONTINUAR</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6 col-xl-4 p-1">
+                                                    <div
+                                                        class="bg-white border-radius-xm shadow-md p-4 position-relative">
+                                                        <img class="star-absolute" src="assets/images/icons/star.png"
+                                                            alt="star">
+                                                        <span class="circle-absolute bg-green-bass ps-2"></span>
+                                                        <div class="text-content-sm text-color-grey pb-2">Sucursal</div>
+                                                        <div class="text-title-md text-color-blue-primary pb-1">$ MXN
+                                                        </div>
+                                                        <div class="text-content-md text-color-blue-primary pb-1">Ver
+                                                            detalle de estudio</div>
+                                                        <div class="text-content-md text-color-blue-dark text-weight-4">
+                                                            Ubicación:</div>
+                                                        <div
+                                                            class="text-content-md text-color-blue-dark text-weight-2 pb-3">
+                                                            Guanajuato No. 244, Roma Nte, Cuauhtémoc, 06760 CDMX</div>
+                                                        <a class="bg-blue-primary text-content-md text-decoration-none text-color-white border-radius-md border-none px-3 py-2"
+                                                            data-bs-toggle="modal" href="#detailModalToggle"
+                                                            role="button">AGREGAR
+                                                            Y CONTINUAR</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6 col-xl-4 p-1">
+                                                    <div
+                                                        class="bg-white border-radius-xm shadow-md p-4 position-relative">
+                                                        <img class="star-absolute" src="assets/images/icons/star.png"
+                                                            alt="star">
+                                                        <span class="circle-absolute bg-green-bass ps-2"></span>
+                                                        <div class="text-content-sm text-color-grey pb-2">Sucursal</div>
+                                                        <div class="text-title-md text-color-blue-primary pb-1">$ MXN
+                                                        </div>
+                                                        <div class="text-content-md text-color-blue-primary pb-1">Ver
+                                                            detalle de estudio</div>
+                                                        <div class="text-content-md text-color-blue-dark text-weight-4">
+                                                            Ubicación:</div>
+                                                        <div
+                                                            class="text-content-md text-color-blue-dark text-weight-2 pb-3">
+                                                            Guanajuato No. 244, Roma Nte, Cuauhtémoc, 06760 CDMX</div>
+                                                        <a class="bg-blue-primary text-content-md text-decoration-none text-color-white border-radius-md border-none px-3 py-2"
+                                                            data-bs-toggle="modal" href="#detailModalToggle"
+                                                            role="button">AGREGAR
+                                                            Y CONTINUAR</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6 col-xl-4 p-1">
+                                                    <div
+                                                        class="bg-white border-radius-xm shadow-md p-4 position-relative">
+                                                        <img class="star-absolute" src="assets/images/icons/star.png"
+                                                            alt="star">
+                                                        <span class="circle-absolute bg-yellow ps-2"></span>
+                                                        <div class="text-content-sm text-color-grey pb-2">Sucursal</div>
+                                                        <div class="text-title-md text-color-blue-primary pb-1">$ MXN
+                                                        </div>
+                                                        <div class="text-content-md text-color-blue-primary pb-1">Ver
+                                                            detalle de estudio</div>
+                                                        <div class="text-content-md text-color-blue-dark text-weight-4">
+                                                            Ubicación:</div>
+                                                        <div
+                                                            class="text-content-md text-color-blue-dark text-weight-2 pb-3">
+                                                            Guanajuato No. 244, Roma Nte, Cuauhtémoc, 06760 CDMX</div>
+                                                        <a class="bg-blue-primary text-content-md text-decoration-none text-color-white border-radius-md border-none px-3 py-2"
+                                                            data-bs-toggle="modal" href="#detailModalToggle"
+                                                            role="button">AGREGAR
+                                                            Y CONTINUAR</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6 col-xl-4 p-1">
+                                                    <div
+                                                        class="bg-white border-radius-xm shadow-md p-4 position-relative">
+                                                        <img class="star-absolute" src="assets/images/icons/star.png"
+                                                            alt="star">
+                                                        <span class="circle-absolute bg-yellow ps-2"></span>
+                                                        <div class="text-content-sm text-color-grey pb-2">Sucursal</div>
+                                                        <div class="text-title-md text-color-blue-primary pb-1">$ MXN
+                                                        </div>
+                                                        <div class="text-content-md text-color-blue-primary pb-1">Ver
+                                                            detalle de estudio</div>
+                                                        <div class="text-content-md text-color-blue-dark text-weight-4">
+                                                            Ubicación:</div>
+                                                        <div
+                                                            class="text-content-md text-color-blue-dark text-weight-2 pb-3">
+                                                            Guanajuato No. 244, Roma Nte, Cuauhtémoc, 06760 CDMX</div>
+                                                        <a class="bg-blue-primary text-content-md text-decoration-none text-color-white border-radius-md border-none px-3 py-2"
+                                                            data-bs-toggle="modal" href="#detailModalToggle"
+                                                            role="button">AGREGAR
+                                                            Y CONTINUAR</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6 col-xl-4 p-1">
+                                                    <div
+                                                        class="bg-white border-radius-xm shadow-md p-4 position-relative">
+                                                        <img class="star-absolute" src="assets/images/icons/star.png"
+                                                            alt="star">
+                                                        <span class="circle-absolute bg-yellow ps-2"></span>
+                                                        <div class="text-content-sm text-color-grey pb-2">Sucursal</div>
+                                                        <div class="text-title-md text-color-blue-primary pb-1">$ MXN
+                                                        </div>
+                                                        <div class="text-content-md text-color-blue-primary pb-1">Ver
+                                                            detalle de estudio</div>
+                                                        <div class="text-content-md text-color-blue-dark text-weight-4">
+                                                            Ubicación:</div>
+                                                        <div
+                                                            class="text-content-md text-color-blue-dark text-weight-2 pb-3">
+                                                            Guanajuato No. 244, Roma Nte, Cuauhtémoc, 06760 CDMX</div>
+                                                        <a class="bg-blue-primary text-content-md text-decoration-none text-color-white border-radius-md border-none px-3 py-2"
+                                                            data-bs-toggle="modal" href="#detailModalToggle"
+                                                            role="button">AGREGAR
+                                                            Y CONTINUAR</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6 col-xl-4 p-1">
+                                                    <div
+                                                        class="bg-white border-radius-xm shadow-md p-4 position-relative">
+                                                        <img class="star-absolute" src="assets/images/icons/star.png"
+                                                            alt="star">
+                                                        <span class="circle-absolute bg-red ps-2"></span>
+                                                        <div class="text-content-sm text-color-grey pb-2">Sucursal</div>
+                                                        <div class="text-title-md text-color-blue-primary pb-1">$ MXN
+                                                        </div>
+                                                        <div class="text-content-md text-color-blue-primary pb-1">Ver
+                                                            detalle de estudio</div>
+                                                        <div class="text-content-md text-color-blue-dark text-weight-4">
+                                                            Ubicación:</div>
+                                                        <div
+                                                            class="text-content-md text-color-blue-dark text-weight-2 pb-3">
+                                                            Guanajuato No. 244, Roma Nte, Cuauhtémoc, 06760 CDMX</div>
+                                                        <a class="bg-blue-primary text-content-md text-decoration-none text-color-white border-radius-md border-none px-3 py-2"
+                                                            data-bs-toggle="modal" href="#detailModalToggle"
+                                                            role="button">AGREGAR
+                                                            Y CONTINUAR</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6 col-xl-4 p-1">
+                                                    <div
+                                                        class="bg-white border-radius-xm shadow-md p-4 position-relative">
+                                                        <img class="star-absolute" src="assets/images/icons/star.png"
+                                                            alt="star">
+                                                        <span class="circle-absolute bg-red ps-2"></span>
+                                                        <div class="text-content-sm text-color-grey pb-2">Sucursal</div>
+                                                        <div class="text-title-md text-color-blue-primary pb-1">$ MXN
+                                                        </div>
+                                                        <div class="text-content-md text-color-blue-primary pb-1">Ver
+                                                            detalle de estudio</div>
+                                                        <div class="text-content-md text-color-blue-dark text-weight-4">
+                                                            Ubicación:</div>
+                                                        <div
+                                                            class="text-content-md text-color-blue-dark text-weight-2 pb-3">
+                                                            Guanajuato No. 244, Roma Nte, Cuauhtémoc, 06760 CDMX</div>
+                                                        <a class="bg-blue-primary text-content-md text-decoration-none text-color-white border-radius-md border-none px-3 py-2"
+                                                            data-bs-toggle="modal" href="#detailModalToggle"
+                                                            role="button">AGREGAR
+                                                            Y CONTINUAR</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6 col-xl-4 p-1">
+                                                    <div
+                                                        class="bg-white border-radius-xm shadow-md p-4 position-relative">
+                                                        <img class="star-absolute" src="assets/images/icons/star.png"
+                                                            alt="star">
+                                                        <span class="circle-absolute bg-red ps-2"></span>
+                                                        <div class="text-content-sm text-color-grey pb-2">Sucursal</div>
+                                                        <div class="text-title-md text-color-blue-primary pb-1">$ MXN
+                                                        </div>
+                                                        <div class="text-content-md text-color-blue-primary pb-1">Ver
+                                                            detalle de estudio</div>
+                                                        <div class="text-content-md text-color-blue-dark text-weight-4">
+                                                            Ubicación:</div>
+                                                        <div
+                                                            class="text-content-md text-color-blue-dark text-weight-2 pb-3">
+                                                            Guanajuato No. 244, Roma Nte, Cuauhtémoc, 06760 CDMX</div>
+                                                        <a class="bg-blue-primary text-content-md text-decoration-none text-color-white border-radius-md border-none px-3 py-2"
+                                                            data-bs-toggle="modal" href="#detailModalToggle"
+                                                            role="button">AGREGAR
+                                                            Y CONTINUAR</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--single form panel-->
+                                    <div class="multisteps-form__panel">
+                                        <div class="row mt-5">
+                                            <div
+                                                class="text-title-lg text-color-blue-dark d-flex justify-content-center align-items-center text-center">
+                                                ¿Cuándo deseas realizar tu estudio?
+                                            </div>
+                                            <div class="row mt-5 mx-auto">
+                                                <div class="col-10 col-md-8 col-xl-6 mt-5 mx-auto">
+                                                    <div class="ps-5 position-relative timeline1">
+                                                        <img class="timeline1-image" src="assets/images/icons/timeline1.png" alt="timeline1">
+                                                        <div class="diary mb-5">
+                                                            <div class="d-flex">
+                                                                <img src="assets/images/icons/calendar.png"
+                                                                    alt="calendar">
+                                                                <div class="text-content-md text-color-grey">Día</div>
+                                                            </div>
+                                                            <div
+                                                                class="d-flex justify-content-lg-start align-items-center mt-2">
+                                                                <button class="bg-white shadow-lg">
+                                                                    <div class="text-title-lg text-color-blue-dark">03
+                                                                    </div>
+                                                                    <div class="text-content-md text-color-grey">May
+                                                                    </div>
+                                                                </button>
+                                                                <button class="bg-white shadow-lg">
+                                                                    <div class="text-title-lg text-color-blue-dark">04
+                                                                    </div>
+                                                                    <div class="text-content-md text-color-grey">May
+                                                                    </div>
+                                                                </button>
+                                                                <button class="bg-white shadow-lg">
+                                                                    <div class="text-title-lg text-color-blue-light">05
+                                                                    </div>
+                                                                    <div class="text-content-md text-color-grey">May
+                                                                    </div>
+                                                                </button>
+                                                                <button class="bg-white shadow-lg">
+                                                                    <div class="text-title-lg text-color-blue-dark">06
+                                                                    </div>
+                                                                    <div class="text-content-md text-color-grey">May
+                                                                    </div>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="dropdown border-radius-sm bg-white shadow-md row py-2">
+                                                            <div
+                                                                class="dropdown-button col-12 d-flex justify-content-center align-items-center">
+                                                                <a class="col-10 mx-auto text-decoration-none text-center py-1 text-title-sm text-color-blue-dark"
+                                                                    onclick="return dropdownFunc();">
+                                                                    TIPO DE DESCUENTO
+                                                                    <img src="assets/images/icons/arrow-down.png"
+                                                                        alt="arrow-down">
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropdown-content col-12 row"
+                                                                id="dropdown-content">
+                                                                <button
+                                                                    class="col-10 mx-auto text-center pt-1 text-title-sm text-color-blue-dark border-top-gray">INAPAM</button>
+                                                                <button
+                                                                    class="col-10 mx-auto text-center mt-2 text-title-sm text-color-blue-dark">ASEGURADORA</button>
+                                                                <button
+                                                                    class="col-10 mx-auto text-center mt-2 text-title-sm text-color-blue-dark">CÓDIGO
+                                                                    EMPRESARIAL</button>
+                                                                <button
+                                                                    class="col-11 mx-auto text-center mt-2 text-title-sm text-color-blue-dark">CUPÓN
+                                                                    DE DESCUENTO</button>
+                                                                <button
+                                                                    class="col-10 mx-auto text-center mt-2 text-title-sm text-color-blue-dark">NINGUNO</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="warning mt-4 d-flex">
+                                                            <div class=" me-2"><img src="assets/images/icons/alert.png">
+                                                            </div>
+                                                            <div class="text-content-sm text-color-grey d-inline">
+                                                                Recuerda
+                                                                asistir a la cita presentando la credencial
+                                                                correspondiente
+                                                                que acredite tu identidad</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-10 col-md-8 col-xl-6 mx-auto">
+                                                    <div class="ps-5 position-relative timeline2">
+                                                        <img class="timeline2-image" src="assets/images/icons/timeline2.png" alt="timeline2">
+                                                        <div class="d-flex mb-5">
+                                                            <div class="pe-2">
+                                                                <img class="user-icon"
+                                                                    src="assets/images/icons/user.png" alt="user">
+                                                            </div>
+                                                            <div class="text-title-sm text-color-blue-dark">
+                                                                Hemoglobina Glicosilada A1c
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-5 form">
+                                                            <div class="col-12">
+                                                                <label for="inputName" class="form-label">Nombre
+                                                                </label>
+                                                                <input type="text" class="form-control" id="inputName">
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <label for="inputLastName" class="form-label">APELLIDO
+                                                                    PATERNO</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="inputLastName">
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <label for="inputMotherName" class="form-label">APELLIDO
+                                                                    MATERNO</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="inputMotherName">
+                                                            </div>
+                                                            <div class="col-12 row">
+
+                                                                <div class="col-6">
+                                                                    <label for="birthday" class="form-label">Fecha de
+                                                                        nacimiento</label>
+                                                                    <input type="date" class="form-control"
+                                                                        id="birthday">
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <label for="sex" class="form-label">SEXO</label>
+                                                                    <input type="text" class="form-control" id="sex"
+                                                                        placeholder="F / M">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <label for="inputEmail" class="form-label">Correo
+                                                                    electrónico</label>
+                                                                <input type="email" class="form-control"
+                                                                    id="inputEmail">
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <label for="inputEmailConfirm"
+                                                                    class="form-label">CONFIRMAR
+                                                                    Correo electrónico</label>
+                                                                <input type="email" class="form-control"
+                                                                    id="inputEmailConfirm">
+                                                            </div>
+                                                            <div class="col-12 mt-3 mb-4">
+                                                                <div class="form-check">
+                                                                    <div class="">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="accept">
+                                                                        <label class="form-check-label" for="accept">
+                                                                            Acepto los términos y condiciones
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="policy">
+                                                                        <label class="form-check-label" for="policy">
+                                                                            Aviso de privacidad
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <button
+                                                                    class="border-none border-radius-md bg-blue-primary text-color-white text-content-md py-3 px-4 js-btn-next"
+                                                                    type="button" title="Next">CONTINUAR AL
+                                                                    PAGO</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--single form panel-->
+                                    <div class="multisteps-form__panel">
+                                        <div class="row mt-5">
+                                            <div
+                                                class="text-title-lg text-color-blue-dark d-flex justify-content-center align-items-center text-center">
+                                                Para realizar tu pago ingresa los datos requeridos.
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center mt-4">
+                                                <div class="">
+                                                    <img class="credit-img" src="assets/images/icons/credit-card.png"
+                                                        alt="credit card">
+                                                </div>
+                                                <div class="text-content-md text-color-grey ps-2">
+                                                    Formulario de pago GETNET
+                                                </div>
+                                            </div>
+                                            <div class="my-5 py-5"></div>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <a class="button-pay text-white text-title-sm px-5 py-3 mt-5 text-decoration-none border-radius-md bg-blue-dark"
+                                                    href="payment.html">PAGAR</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 row">
+                <div class="col-8 col-md-6 col-lg-12 mx-auto mx-lg-3 mt-5">
+                    <div class="text-title-md text-color-blue-dark mt-5 pb-3 border-bottom-gray px-0">
+                        Este es tu resumen de compra, no olvides verificar tus datos.
+                    </div>
+                    <div class="d-flex py-3 border-bottom-gray px-0">
+                        <div class="">
+                            <img class="position-image" src="assets/images/icons/map-pin.png">
+                        </div>
+                        <div class="text-title-sm text-color-grey ps-1">
+                            03600 Benito Juárez / CDMX
+                        </div>
+                    </div>
+                    <div class="py-3 border-bottom-gray px-0" id="side-study">
+                        <div class="text-content-sm text-color-grey pb-1">
+                            Laboratorio
+                        </div>
+                        <div class="text-title-sm text-color-blue-dark pb-2">
+                            Química sanguínea de 35 elementos en suero
+                        </div>
+                        <div class="text-title-md text-color-blue-primary pb-2">
+                            $ MXN
+                        </div>
+                        <div class="text-content-md text-color-blue-primary pb-2">
+                            Ver detalle de estudio
+                        </div>
+                        <div class="text-content-md text-color-grey">Ubicación:</div>
+                        <div class="text-content-md text-color-grey pb-2">Guanajuato No. 244, Roma Nte, Cuauhtémoc,
+                            06760 CDMX</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="studyModalToggle" aria-hidden="true" aria-labelledby="studyModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="modal-cancel bg-white" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="assets/images/icons/x-circle.png" alt="Cancel">
+                        </button>
+                        <div class="container text-center py-4">
+                            <div class="text-study-title text-color-blue-dark pt-2">
+                                Tenemos una prueba de laboratorio cerca de ti.
+                            </div>
+                            <div class="text-study-content text-color-blue-dark py-3">
+                                Ingresa tu C.P., municipio o alcaldía para visualizar las opciones de estudios clínicos
+                                en
+                                tu localidad.
+                            </div>
+                            <img class="location-image" src="assets/images/icons/location.png" alt="Location">
+                            <input class="study-button study-input text-study-button text-color-grey text-weight-1 mb-3"
+                                type="search" aria-label="Search" placeholder="Código postal, municipio o alcaldía">
+                            <div class="text-study-content text-color-blue-dark py-3">Inicia sesión o crea tu cuenta
+                                para
+                                continuar</div>
+                            <button
+                                class="study-button study-button-facebook text-study-button text-color-white bg-facebook mb-3">
+                                Continuar con Facebook
+                            </button>
+                            <button class="study-button study-button-google text-study-button text-color-grey mb-3">
+                                Continuar con Google
+                            </button>
+                            <button class="study-button text-study-button text-color-grey">
+                                Continuar con Correo elctronico
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="loginModalToggle" aria-hidden="true" aria-labelledby="loginModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="modal-cancel bg-white" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="assets/images/icons/x-circle.png" alt="Cancel">
+                    </button>
+                    <div class="container text-center pt-4 pb-2">
+                        <div class="text-title-md text-color-blue-dark pt-3 pb-4">
+                            Iniciar Sesión
+                        </div>
+                        <div class="row pt-2">
+                            <div class="text-start col-8 mx-auto text-content-sm text-color-grey pb-4">cORREO
+                                ELECTRÓNICOI</div>
+                            <input class="login-input col-8 mx-auto" type="text">
+                            <div class="text-start col-8 mx-auto text-content-sm text-color-grey pt-2 pb-4">CONTRASEÑA
+                            </div>
+                            <input class="login-input col-8 mx-auto" type="text">
+                            <a class="text-decoration-none col-8 mx-auto border-radius-md py-3 px-4 text-title-sm text-white bg-blue-primary mt-4 mb-3" href="wizard.html">
+                                INICIAR SESIÓN
+                            </a>
+                            <a class="border-none text-decoration-none col-8 mx-auto py-3 px-4 d-flex justify-content-center mb-2"
+                                data-bs-toggle="modal" href="#signupModalToggle" role="button">
+                                <div class="text-color-blue-dark text-content-md">o crea tu cuenta</div>
+                                <div class="text-color-blue-primary text-content-md ps-1">aquí</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signupModalToggle" aria-hidden="true" aria-labelledby="signupModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="modal-cancel bg-white" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="assets/images/icons/x-circle.png" alt="Cancel">
+                    </button>
+                    <div class="container text-center pt-4 pb-2">
+                        <div class="text-title-md text-color-blue-dark pt-3 pb-4">
+                            Regístrate
+                        </div>
+                        <div class="row pt-2">
+                            <div class="text-start col-8 mx-auto text-content-sm text-color-grey pb-4">Nombre</div>
+                            <input class="login-input col-8 mx-auto" type="text">
+                            <div class="text-start col-8 mx-auto text-content-sm text-color-grey pt-2 pb-4">TELÉFONO
+                            </div>
+                            <input class="login-input col-8 mx-auto" type="text">
+                            <div class="text-start col-8 mx-auto text-content-sm text-color-grey pt-2 pb-4">CORREO ELECTRóNICO
+                            </div>
+                            <input class="login-input col-8 mx-auto" type="text">
+                            <div class="text-start col-8 mx-auto text-content-sm text-color-grey pt-2 pb-4">CONTRASEÑA
+                            </div>
+                            <input class="login-input col-8 mx-auto" type="text">
+                            <a class="text-decoration-none col-8 mx-auto border-radius-md py-3 px-4 text-title-sm text-white bg-blue-dark mt-4 mb-3" href="wizard.html">
+                                CREAR CUENTA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>
