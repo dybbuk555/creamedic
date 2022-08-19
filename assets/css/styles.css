@@ -48,21 +48,43 @@
  }
 
  .text-title {
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 38px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+ }
+
+ @media (min-width:768px) {
+    .text-title {
+       font-weight: 800 !important;
+       font-size: 32px !important;
+       line-height: 38px !important;
+    }
  }
 
  .text-banner-title {
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 28px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
  }
 
  .text-banner-content {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+ }
+
+ @media (min-width: 480px) {
+    .text-banner-title {
+       font-weight: 800 !important;
+       font-size: 24px !important;
+       line-height: 28px !important;
+    }
+
+    .text-banner-content {
+       font-weight: 600 !important;
+       font-size: 18px !important;
+       line-height: 22px !important;
+    }
  }
 
  .text-study-title {
@@ -80,12 +102,6 @@
  .text-study-content {
     font-weight: 700;
     font-size: 15px;
-    line-height: 20px;
- }
-
- .text-paragraph {
-    font-weight: 600px;
-    font-size: 14px;
     line-height: 20px;
  }
 
@@ -261,7 +277,14 @@
     box-shadow: 0px 12px 12px rgba(0, 6, 83, 0.1);
  }
 
+ @media (min-width: 768px) {
+    .background-image {
+       display: block !important;
+    }
+ }
+
  .background-image {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -270,8 +293,16 @@
  }
 
  .navbar {
-    height: 130px;
+    height: 90px;
     padding: 0;
+    background-color: #008CBC;
+ }
+
+ @media (min-width: 480px) {
+    .navbar {
+       height: 130px !important;
+       background-color: transparent !important;
+    }
  }
 
  .navbar .navbar-brand img {
@@ -357,11 +388,30 @@
  .footer {
     background-color: white;
     height: 90px;
+    margin-bottom: 0;
  }
 
  .footer .logo-CIE {
-    width: 80px;
+    width: 60px;
     height: auto;
+ }
+
+
+ .text-paragraph {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+ }
+
+ @media (min-width: 480px) {
+   .footer .logo-CIE {
+      width: 80px !important;
+   }
+
+   .text-paragraph {
+      font-weight: 600 !important;
+      font-size: 14px !important;
+   }
  }
 
  .modal-cancel {
@@ -369,6 +419,20 @@
     position: absolute;
     top: 10px;
     right: 10px;
+ }
+
+ @media (min-width: 481px) {
+    .logo {
+       height: 64px !important;
+       width: auto !important;
+    }
+ }
+
+ @media (max-width: 480px) {
+    .logo {
+       height: 48px !important;
+       width: auto !important;
+    }
  }
 
  .modal-cancel img {
@@ -725,7 +789,7 @@
  }
 
  .login-input:focus {
-   border-bottom: 1.2px solid #7CC3DB !important;
+    border-bottom: 1.2px solid #7CC3DB !important;
  }
 
  .form-label {
@@ -787,4 +851,33 @@
     width: 30px;
     position: absolute;
     left: 0;
+ }
+
+ @media (min-width: 1200px) {
+    .text-heading {
+       text-align: right !important;
+    }
+ }
+
+ .text-heading {
+    text-align: center;
+    color: #000653;
+ }
+
+ @media (min-width: 480px) {
+    .bg-color {
+       background-color: #008CBC !important;
+    }
+
+    .text-heading {
+       color: white !important;
+    }
+ }
+
+ .bg-color {
+    background-color: #F8FBFF;
+ }
+
+ .border-card {
+    border: 1px solid #DADADA;
  }
