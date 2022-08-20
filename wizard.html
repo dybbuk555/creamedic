@@ -154,7 +154,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <button
                                                 class="text-center col-4 mx-auto py-3 js-btn-next mt-5 mb-4 bg-blue-primary text-content-lg text-white border-radius-lg"
                                                 type="button" title="Next" mt-5>CONTINUAR</button>
@@ -168,15 +168,20 @@
                                                 ¿Cuándo deseas realizar tu estudio?
                                             </div>
                                             <div class="row mt-5 mx-auto">
-                                                <div class="col-10 col-md-8 col-xl-6 mt-5 mx-auto">
+                                                <div class="col-10 col-md-8 col-xl-6 mx-auto">
                                                     <div class="ps-5 position-relative timeline1">
-                                                        <img class="timeline1-image"
-                                                            src="assets/images/icons/timeline1.png" alt="timeline1">
+                                                        <div class="text-content-md text-color-grey pb-2">TIpo de
+                                                            Servicio Y Ambulancia</div>
+                                                        <div class="text-title-md text-color-blue-dark pb-4">Servicio
+                                                            Programado Ambulancia Covid</div>
+                                                        <div class="text-title-lg text-color-blue-primary pb-4">
+                                                            $ MXN</div>
                                                         <div class="diary mb-5">
                                                             <div class="d-flex">
                                                                 <img src="assets/images/icons/calendar.png"
                                                                     alt="calendar">
-                                                                <div class="text-content-md text-color-grey">Día</div>
+                                                                <div class="text-content-md text-color-grey">Selecciona
+                                                                    la fecha de tu Servicio.</div>
                                                             </div>
                                                             <div
                                                                 class="d-flex justify-content-lg-start align-items-center mt-2">
@@ -233,15 +238,6 @@
                                                                     class="col-10 mx-auto text-center mt-2 text-title-sm text-color-blue-dark">NINGUNO</button>
                                                             </div>
                                                         </div>
-                                                        <div class="warning mt-4 d-flex">
-                                                            <div class=" me-2"><img src="assets/images/icons/alert.png">
-                                                            </div>
-                                                            <div class="text-content-sm text-color-grey d-inline">
-                                                                Recuerda
-                                                                asistir a la cita presentando la credencial
-                                                                correspondiente
-                                                                que acredite tu identidad</div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-10 col-md-8 col-xl-6 mx-auto">
@@ -259,7 +255,7 @@
                                                         </div>
                                                         <div class="row mt-5 form">
                                                             <div class="col-12">
-                                                                <label for="inputName" class="form-label">Nombre
+                                                                <label for="inputName" class="form-label">NOMBRE
                                                                 </label>
                                                                 <input type="text" class="form-control" id="inputName">
                                                             </div>
@@ -275,52 +271,28 @@
                                                                 <input type="text" class="form-control"
                                                                     id="inputMotherName">
                                                             </div>
-                                                            <div class="col-12 row">
-
-                                                                <div class="col-6">
-                                                                    <label for="birthday" class="form-label">Fecha de
-                                                                        nacimiento</label>
-                                                                    <input type="date" class="form-control"
-                                                                        id="birthday">
-                                                                </div>
-                                                                <div class="col-4">
-                                                                    <label for="sex" class="form-label">SEXO</label>
-                                                                    <input type="text" class="form-control" id="sex"
-                                                                        placeholder="F / M">
-                                                                </div>
+                                                            <div class="col-12">
+                                                                <label for="birthday" class="form-label">FECHA DE
+                                                                    NACIMIENTO</label>
+                                                                <input type="date" class="form-control" id="birthday">
                                                             </div>
                                                             <div class="col-12">
-                                                                <label for="inputEmail" class="form-label">Correo
-                                                                    electrónico</label>
+                                                                <label for="sex" class="form-label">SEXO</label>
+                                                                <input type="text" class="form-control" id="sex">
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <label for="inputEmail" class="form-label">CORREO
+                                                                    ELECTRóNICO</label>
                                                                 <input type="email" class="form-control"
                                                                     id="inputEmail">
                                                             </div>
                                                             <div class="col-12">
                                                                 <label for="inputEmailConfirm"
-                                                                    class="form-label">CONFIRMAR
-                                                                    Correo electrónico</label>
+                                                                    class="form-label">TELEFONO</label>
                                                                 <input type="email" class="form-control"
                                                                     id="inputEmailConfirm">
                                                             </div>
-                                                            <div class="col-12 mt-3 mb-4">
-                                                                <div class="form-check">
-                                                                    <div class="">
-                                                                        <input class="form-check-input" type="checkbox"
-                                                                            id="accept">
-                                                                        <label class="form-check-label" for="accept">
-                                                                            Acepto los términos y condiciones
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="">
-                                                                        <input class="form-check-input" type="checkbox"
-                                                                            id="policy">
-                                                                        <label class="form-check-label" for="policy">
-                                                                            Aviso de privacidad
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12">
+                                                            <div class="col-12 mt-5">
                                                                 <button
                                                                     class="border-none border-radius-md bg-blue-primary text-color-white text-content-md py-3 px-4 js-btn-next"
                                                                     type="button" title="Next">PROCEDER AL PAGO</button>
@@ -353,17 +325,15 @@
                                                     <div class="d-flex mb-3">
                                                         <div class="p-3 m-1"></div>
                                                         <div class="">
-                                                            <div class="text-content-lg text-color-blue-dark">Número de
-                                                                pacientes:</div>
-                                                            <div class="text-content-md text-color-grey">1 Laboratorio y
-                                                                sucursal seleccionadas:</div>
+                                                            <div class="text-content-lg text-color-blue-dark">Proovedor Asignado</div>
+                                                            <div class="text-content-md text-color-grey">Ambulancias LIFE</div>
                                                         </div>
                                                     </div>
                                                     <div class="d-flex mb-2">
                                                         <div class="px-3 m-1"></div>
                                                         <div class="">
-                                                            <div class="text-content-lg text-color-blue-dark">Fecha: 5
-                                                                Mayo 2022</div>
+                                                            <div class="text-content-lg text-color-blue-dark">Fecha de tu Servicio:</div>
+                                                            <div class="text-content-lg text-color-blue-dark">5 Mayo 2022</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -392,10 +362,7 @@
                                                             <img src="assets/images/icons/warning.png" alt="warning">
                                                         </div>
                                                         <div class="">
-                                                            <div class="text-content-md text-color-grey">Recuerda
-                                                                asistir a la cita presentando la
-                                                                credencial correspondiente que acredite tu identidad
-                                                            </div>
+                                                            <div class="text-content-md text-color-grey">Recuerda estar atento a la llamada de confirmacion por parte del proovedor.</div>
                                                         </div>
                                                     </div>
                                                     <div class="d-flex">

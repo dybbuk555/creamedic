@@ -712,8 +712,9 @@
  }
 
  .diary img {
-    width: 12px;
-    height: auto;
+   margin-top: 2px;
+    width: 14px !important;
+    height: 14px !important;
     margin-right: 6px;
  }
 
@@ -851,7 +852,7 @@
 
  .timeline1-image,
  .timeline2-image {
-    width: 30px;
+    width: 32px;
     position: absolute;
     left: 0;
  }
