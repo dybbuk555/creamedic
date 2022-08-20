@@ -149,12 +149,6 @@ window.addEventListener('load', setFormHeight, false);
 //SETTING PROPER FORM HEIGHT ONRESIZE
 window.addEventListener('resize', setFormHeight, false);
 
-function func() {
-    document.getElementById("few-items").style.display = "none";
-    document.getElementById("many-items").style.display = "block";
-    document.getElementById("side-study").style.display = "block";
-}
-
 function dropdownFunc() {
     if (document.getElementById("dropdown-content").style.display == "none") {
         document.getElementById("dropdown-content").style.display = "block";

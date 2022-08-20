@@ -301,7 +301,10 @@
  @media (min-width: 480px) {
     .navbar {
        height: 130px !important;
-       background-color: transparent !important;
+    }
+
+    .navbar-index {
+      background-color: transparent !important; 
     }
  }
 
